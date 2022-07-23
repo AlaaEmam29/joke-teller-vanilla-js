@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #45badd;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/robot.gif);
+  background-repeat: no-repeat;
+  background-position: 33% center;
+  background-size: 15%;
+}
+.btn {
+  font-family: Courier, monospace;
+
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background: #65bfa7;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  filter: brightness(95%);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:disabled {
+  filter: brightness(35%);
+  cursor: default;
+}
+@media screen and (max-width: 575.98px) {
+  .container {
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+  .container {
+    background-position: left center;
+    background-size: 40%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    background-position: 25% center;
+
+    background-size: 20%;
+  }
+}
